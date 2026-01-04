@@ -23,7 +23,6 @@ def main():
 
     with open(file_path, 'r') as file:
         for line in file:
-            # Use .strip() to remove leading/trailing whitespace, including the newline character
             id = line.strip()
             params = {
                 'idno': id
@@ -74,7 +73,7 @@ def main():
     pivot = pivot[unique_slots]
 
     # Save to CSV
-    pivot.to_csv('schedule_pivot.csv')
+    pivot.to_csv('schedule.csv')
 
 
 
